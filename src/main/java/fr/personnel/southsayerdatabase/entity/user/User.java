@@ -1,4 +1,4 @@
-package fr.personnel.southsayerdatabase.entity;
+package fr.personnel.southsayerdatabase.entity.user;
 
 import lombok.*;
 

@@ -1,6 +1,6 @@
-package fr.personnel.southsayerdatabase.repository;
+package fr.personnel.southsayerdatabase.repository.user;
 
-import fr.personnel.southsayerdatabase.entity.User;
+import fr.personnel.southsayerdatabase.entity.user.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

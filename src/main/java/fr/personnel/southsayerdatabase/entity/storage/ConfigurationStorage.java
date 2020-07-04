@@ -1,14 +1,9 @@
-package fr.personnel.southsayerdatabase.entity;
+package fr.personnel.southsayerdatabase.entity.storage;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.With;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.sql.Clob;
 
 /**
  * @author Farouk KABOUCHE
@@ -39,7 +34,7 @@ public class ConfigurationStorage {
      * Xml Configuration
      */
     @JoinColumn(name = "XML_CONF", nullable = false)
-    private String xmlConf;
+    private Clob xmlConf;
     /**
      * Deleted
      */
