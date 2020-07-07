@@ -34,11 +34,11 @@ public class OAPDeliveryType {
     /**
      * Libellé Type Prestation
      */
-    @JoinColumn(name = "LIBELLE_TYPE_PRESTATION", nullable = false)
-    private String libelleTypePrestation;
+    @JoinColumn(name = "LIB_TYPE_PRESTATION", nullable = false)
+    private String libTypePrestation;
     /**
      * Id OAP
      */
     @JoinColumn(name = "ID_OAP", nullable = false)
-    private Long idOAP;
+    private Long idOap;
 }
