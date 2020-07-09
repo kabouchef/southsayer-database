@@ -1,6 +1,6 @@
-package fr.personnel.southsayerdatabase.repository.storage;
+package fr.personnel.southsayerdatabase.repository.simulation;
 
-import fr.personnel.southsayerdatabase.entity.storage.ConfigurationStorage;
+import fr.personnel.southsayerdatabase.entity.simulation.ConfigurationStorage;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
@@ -16,5 +16,6 @@ public interface ConfigurationStorageRepository extends CrudRepository<Configura
     Optional<ConfigurationStorage> findByConfId(String confId);
     List<ConfigurationStorage> findByConfCategIdAndConfIdLike(String confCategId, String confId);
     List<ConfigurationStorage> findByConfCategIdLikeAndConfIdLike(String confCategId, String confId);
+    int countByConfCategIdLikeAndConfIdLike(String confCategId, String confId);
 
 }

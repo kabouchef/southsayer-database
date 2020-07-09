@@ -1,4 +1,4 @@
-package fr.personnel.southsayerdatabase.entity.storage;
+package fr.personnel.southsayerdatabase.entity.simulation;
 
 import lombok.*;
 
@@ -8,7 +8,7 @@ import java.sql.Clob;
 /**
  * @author Farouk KABOUCHE
  *
- * Configuration Storage Entity
+ * T_CONF_STORAGE Entity
  */
 
 @Data
