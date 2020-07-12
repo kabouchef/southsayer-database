@@ -1,7 +1,6 @@
-package fr.personnel.southsayerdatabase.repository.activityCode;
+package fr.personnel.southsayerdatabase.repository.activitycode;
 
-import fr.personnel.southsayerdatabase.entity.activityCode.ActivityCode;
-import fr.personnel.southsayerdatabase.entity.simulation.ConfigurationStorage;
+import fr.personnel.southsayerdatabase.entity.activitycode.ActivityCode;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

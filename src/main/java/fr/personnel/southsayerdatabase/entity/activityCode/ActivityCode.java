@@ -1,4 +1,4 @@
-package fr.personnel.southsayerdatabase.entity.activityCode;
+package fr.personnel.southsayerdatabase.entity.activitycode;
 
 import lombok.Data;
 

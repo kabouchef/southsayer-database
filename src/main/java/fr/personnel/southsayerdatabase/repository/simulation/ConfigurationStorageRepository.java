@@ -14,6 +14,7 @@ import java.util.Optional;
 
 public interface ConfigurationStorageRepository extends CrudRepository<ConfigurationStorage, Integer> {
     Optional<ConfigurationStorage> findByConfId(String confId);
+    Optional<List<ConfigurationStorage>> findByConfCategIdLike(String confId);
     List<ConfigurationStorage> findByConfCategIdAndConfIdLike(String confCategId, String confId);
     List<ConfigurationStorage> findByConfCategIdLikeAndConfIdLike(String confCategId, String confId);
     int countByConfCategIdLikeAndConfIdLike(String confCategId, String confId);
