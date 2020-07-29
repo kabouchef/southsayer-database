@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 /**
  * @author Farouk KABOUCHE
- *
  * Users Entity
+ * @version 1.0
  */
 
 @Data

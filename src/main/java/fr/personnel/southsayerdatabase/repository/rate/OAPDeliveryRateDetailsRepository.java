@@ -8,8 +8,8 @@ import java.util.Optional;
 
 /**
  * @author Farouk KABOUCHE
- * <p>
  * OAP Delivery Rate Details Repository
+ * @version 1.0
  */
 
 public interface OAPDeliveryRateDetailsRepository extends CrudRepository<OAPDeliveryRateDetails, Integer> {

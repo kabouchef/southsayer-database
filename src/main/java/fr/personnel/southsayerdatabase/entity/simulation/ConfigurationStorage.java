@@ -7,8 +7,8 @@ import java.sql.Clob;
 
 /**
  * @author Farouk KABOUCHE
- *
  * T_CONF_STORAGE Entity
+ * @version 1.0
  */
 
 @Data

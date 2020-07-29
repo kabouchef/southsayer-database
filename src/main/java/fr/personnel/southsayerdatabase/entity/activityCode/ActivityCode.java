@@ -1,18 +1,19 @@
 package fr.personnel.southsayerdatabase.entity.activitycode;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
 
 /**
  * @author Farouk KABOUCHE
- *
  * OAP Code Activite Entity
+ * @version 1.0
  */
 
 @Data
 @Entity
+@AllArgsConstructor
 @Table(name = "T_OAP_CODE_ACTIVITE")
 @SecondaryTable(name = "T_OAP_CODE_ACTIVITE_OAP", pkJoinColumns = @PrimaryKeyJoinColumn(name = "COD_ACTIVITE"))
 public class ActivityCode {
