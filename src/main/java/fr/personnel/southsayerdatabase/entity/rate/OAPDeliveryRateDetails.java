@@ -2,6 +2,7 @@ package fr.personnel.southsayerdatabase.entity.rate;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.With;
 
 import javax.persistence.*;
 
@@ -15,6 +16,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @Entity
+@With
 @Table(name = "T_OAP_IDENTIFIANT_TARIF")
 @SecondaryTable(name = "T_OAP_TARIF_PRESTATION", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IDENTIFIANT"))
 @SecondaryTable(name = "T_OAP_DETAIL_PRESTATION", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IDENTIFIANT"))

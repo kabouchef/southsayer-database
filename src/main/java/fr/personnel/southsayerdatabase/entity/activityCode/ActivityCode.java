@@ -13,6 +13,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@With
 @AllArgsConstructor
 @Table(name = "T_OAP_CODE_ACTIVITE")
 @SecondaryTable(name = "T_OAP_CODE_ACTIVITE_OAP", pkJoinColumns = @PrimaryKeyJoinColumn(name = "COD_ACTIVITE"))
