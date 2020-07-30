@@ -1,18 +1,22 @@
 package fr.personnel.southsayerdatabase.entity.rate;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.With;
 
 import javax.persistence.*;
 
 
 /**
  * @author Farouk KABOUCHE
- *
  * OAP Delivery Rate Wording Entity
+ * @version 1.0
  */
 
 @Data
+@AllArgsConstructor
 @Entity
+@With
 @Table(name = "T_OAP_IDENTIFIANT_TARIF")
 @SecondaryTable(name = "T_OAP_TARIF_PRESTATION", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IDENTIFIANT"))
 @SecondaryTable(name = "T_OAP_DETAIL_PRESTATION", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IDENTIFIANT"))
@@ -168,6 +172,5 @@ public class OAPDeliveryRateDetails {
      */
     @Column(name = "ORDRE", nullable = false, table="T_OAP_DETAIL_PRESTATION")
     private Long ordre;
-
 
 }

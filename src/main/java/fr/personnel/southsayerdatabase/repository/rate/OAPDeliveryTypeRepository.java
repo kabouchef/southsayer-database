@@ -8,8 +8,8 @@ import java.util.Optional;
 
 /**
  * @author Farouk KABOUCHE
- *
  * OAP Delivery Type Repository
+ * @version 1.0
  */
 
 public interface OAPDeliveryTypeRepository extends CrudRepository<OAPDeliveryType, Integer> {

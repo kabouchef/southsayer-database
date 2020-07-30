@@ -13,8 +13,8 @@ import javax.persistence.Table;
 
 /**
  * @author Farouk KABOUCHE
- *
  * OAP Delivery Type Entity
+ * @version 1.0
  */
 
 @Data
