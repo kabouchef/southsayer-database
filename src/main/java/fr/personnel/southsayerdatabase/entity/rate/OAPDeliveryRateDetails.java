@@ -2,6 +2,7 @@ package fr.personnel.southsayerdatabase.entity.rate;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.With;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ import javax.persistence.*;
  */
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @With
@@ -156,12 +158,6 @@ public class OAPDeliveryRateDetails {
      */
     @Column(name = "PRESTATION_DE", nullable = false, table="T_OAP_DETAIL_PRESTATION")
     private String prestationDe;
-
-    /**
-     * Statut DP
-     */
-    @Column(name = "STATUT", nullable = false, table="T_OAP_DETAIL_PRESTATION")
-    private String statutDp;
     /**
      * Langue
      */
