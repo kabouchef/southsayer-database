@@ -16,6 +16,8 @@ public interface ConfigurationStorageRepository extends CrudRepository<Configura
 
     Optional<ConfigurationStorage> findByConfId(String confId);
 
+    ConfigurationStorage findByConfIdLike (String confId);
+
     Optional<List<ConfigurationStorage>> findByConfCategIdLike(String confId);
 
     List<ConfigurationStorage> findByConfCategIdLikeAndConfIdLike(String confCategId, String confId);
